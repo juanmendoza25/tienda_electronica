@@ -1,187 +1,266 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Electrónica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="img/store.png" type="image/png">
 </head>
+
 <body>
     <header>
-        <h1>Tienda de Electrónica</h1>
-        <nav>
-            <ul>
-                <li><a href="#pantallas">Pantallas</a></li>
-                <li><a href="#mousses">Mouses</a></li>
-                <li><a href="#teclados">Teclados</a></li>
-                <li><a href="#audifonos">Audífonos</a></li>
-                <li><a href="#pc">PC</a></li>
-            </ul>
-        </nav>
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                    <img src="img/logo.png" alt="logo" width="100px" height="100px">
+                      <a class="navbar-brand" href="index.html">Tienda de Electrónica</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="pantallas.html">Pantallas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mouses.html">Mouses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="teclados.html">Teclados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="audifonos.html">Audifonos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pc.html">PC</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+                <h1>Tienda de Electrónica</h1>
+            </div>
+        </div>
     </header>
     <main>
-        <section id="pantallas">
-            <h2>Pantallas</h2>
-            <div class="productos">
-                <div class="producto">
-                    <input type="checkbox" id="pantalla1" data-nombre="Pantalla 1" data-precio="200">
-                    <label for="pantalla1">
-                        <h3>Pantalla 1</h3>
-                        <img src="img/pantalla1.jpg" alt="Pantalla 1">
-                        <p>Descripción de la pantalla 1.</p>
-                        <span class="precio">$200</span>
-                    </label>
-                </div>
-                <div class="producto">
-                    <input type="checkbox" id="pantalla2" data-nombre="Pantalla 2" data-precio="250">
-                    <label for="pantalla2">
-                        <h3>Pantalla 2</h3>
-                        <img src="img/pantalla2.jpg" alt="Pantalla 2">
-                        <p>Descripción de la pantalla 2.</p>
-                        <span class="precio">$250</span>
-                    </label>
-                </div>
-                <div class="producto">
-                    <input type="checkbox" id="pantalla3" data-nombre="Pantalla 3" data-precio="300">
-                    <label for="pantalla3">
-                        <h3>Pantalla 3</h3>
-                        <img src="img/pantalla3.jpg" alt="Pantalla 3">
-                        <p>Descripción de la pantalla 3.</p>
-                        <span class="precio">$300</span>
-                    </label>
+        <!-- Sección de pantallas -->
+        <h2>Pantallas</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 p-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/pantalla1.jpg" class="card-img-top p-4" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" id="pantalla1" data-nombre="Pantalla 1" data-precio="200">
+                        <label for="pantalla1">
+                            <h5 class="card-title">Pantalla 1</h5>
+                            <p class="card-text">Descripción de la pantalla 1.</p>
+                            <span class="precio">$200</span>
+                        </label>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Comprame culo</small>
+                    </div>
                 </div>
             </div>
-        </section>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/pantalla2.jpg" class="card-img-top p-4" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" id="pantalla2" data-nombre="Pantalla 2" data-precio="250"> 
+                        <label for="pantalla2">
+                            <h5 class="card-title">Pantalla 2</h5>
+                            <p class="card-text">Descripción de la pantalla 2.</p>
+                            <span class="precio">$250</span>
+                        </label>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Ah te pones mamon?</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/pantalla3.jpg" class="card-img-top p-4" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" id="pantalla3" data-nombre="Pantalla 3" data-precio="300">
+                        <label for="pantalla3">
+                            <h5 class="card-title">Pantalla 3</h5>
+                            <p class="card-text">Descripción de la pantalla 3.</p>
+                            <span class="precio">$300</span>
+                        </label>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Achingar a sumadre</small>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <section id="mousses">
-            <h2>Mouses</h2>
-            <div class="productos">
-                <div class="producto">
-                    <input type="checkbox" id="mouse1" data-nombre="Mouse 1" data-precio="20">
-                    <label for="mouse1">
-                        <h3>Mouse 1</h3>
-                        <img src="img/mouse1.jpg" alt="Mouse 1">
-                        <p>Descripción del mouse 1.</p>
-                        <span class="precio">$20</span>
-                    </label>
-                </div>
-                <div class="producto">
-                    <input type="checkbox" id="mouse2" data-nombre="Mouse 2" data-precio="30">
-                    <label for="mouse2">
-                        <h3>Mouse 2</h3>
-                        <img src="img/mouse2.jpg" alt="Mouse 2">
-                        <p>Descripción del mouse 2.</p>
-                        <span class="precio">$30</span>
-                    </label>
-                </div>
-                <div class="producto">
-                    <input type="checkbox" id="mouse3" data-nombre="Mouse 3" data-precio="40">
-                    <label for="mouse3">
-                        <h3>Mouse 3</h3>
-                        <img src="img/mouse3.jpg" alt="Mouse 3">
-                        <p>Descripción del mouse 3.</p>
-                        <span class="precio">$40</span>
-                    </label>
-                </div>
-            </div>
-        </section>
-        <section id="teclados">
-            <h2>Teclados</h2>
-            <div class="productos">
-                <div class="producto">
+        <!-- Sección de teclados -->
+        <h2>Teclados</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 p-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/teclado1.jpg" class="card-img-top p-4" alt="...">
+                <div class="card-body">
                     <input type="checkbox" id="teclado1" data-nombre="Teclado 1" data-precio="50">
                     <label for="teclado1">
-                        <h3>Teclado 1</h3>
-                        <img src="img/teclado1.jpg" alt="Teclado 1">
-                        <p>Descripción del teclado 1.</p>
+                        <h5 class="card-title">Teclado 1</h5>
+                        <p class="card-text">Descripción del teclado 1.</p>
                         <span class="precio">$50</span>
                     </label>
                 </div>
-                <div class="producto">
-                    <input type="checkbox" id="teclado2" data-nombre="Teclado 2" data-precio="60">
-                    <label for="teclado2">
-                        <h3>Teclado 2</h3>
-                        <img src="img/teclado2.jpg" alt="Teclado 2">
-                        <p>Descripción del teclado 2.</p>
-                        <span class="precio">$60</span>
-                    </label>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Comprame culo</small>
                 </div>
-                <div class="producto">
-                    <input type="checkbox" id="teclado3" data-nombre="Teclado 3" data-precio="70">
-                    <label for="teclado3">
-                        <h3>Teclado 3</h3>
-                        <img src="img/teclado3.jpg" alt="Teclado 3">
-                        <p>Descripción del teclado 3.</p>
-                        <span class="precio">$70</span>
-                    </label>
-                </div>
+              </div>
             </div>
-        </section>
-        <section id="audifonos">
-            <h2>Audífonos</h2>
-            <div class="productos">
-                <div class="producto">
-                    <input type="checkbox" id="audifonos1" data-nombre="Audífonos 1" data-precio="80">
-                    <label for="audifonos1">
-                        <h3>Audífonos 1</h3>
-                        <img src="img/audifonos1.jpg" alt="Audífonos 1">
-                        <p>Descripción de los audífonos 1.</p>
+            <div class="col">
+                <div class="card h-100">
+                  <img src="img/teclado2.jpg" class="card-img-top p-4" alt="...">
+                  <div class="card-body">
+                      <input type="checkbox" id="teclado2" data-nombre="Teclado 2" data-precio="60">
+                      <label for="teclado2">
+                          <h5 class="card-title">Teclado 2</h5>
+                          <p class="card-text">Descripción del teclado 2.</p>
+                          <span class="precio">$60</span>
+                      </label>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Ah te pones mamon?</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/teclado3.jpg" class="card-img-top p-4" alt="...">
+                  <div class="card-body">
+                      <input type="checkbox" id="teclado3" data-nombre="Teclado 3" data-precio="70">
+                      <label for="teclado3">
+                          <h5 class="card-title">Teclado 3</h5>
+                          <p class="card-text">Descripción del teclado 3.</p>
+                          <span class="precio">$70</span>
+                      </label>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Achingar a sumadre</small>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <h2>Audifonos</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 p-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/audifonos1.jpg" class="card-img-top p-4" alt="...">
+                <div class="card-body">
+                    <input type="checkbox" id="audifonos1" data-nombre="Audifono 1" data-precio="80">
+                    <label for="audifono1">
+                        <h5 class="card-title">Audifono 1</h5>
+                        <p class="card-text">Descripción del Audifono 1.</p>
                         <span class="precio">$80</span>
                     </label>
                 </div>
-                <div class="producto">
-                    <input type="checkbox" id="audifonos2" data-nombre="Audífonos 2" data-precio="90">
-                    <label for="audifonos2">
-                        <h3>Audífonos 2</h3>
-                        <img src="img/audifonos2.jpg" alt="Audífonos 2">
-                        <p>Descripción de los audífonos 2.</p>
-                        <span class="precio">$90</span>
-                    </label>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Comprame culo</small>
                 </div>
-                <div class="producto">
-                    <input type="checkbox" id="audifonos3" data-nombre="Audífonos 3" data-precio="100">
-                    <label for="audifonos3">
-                        <h3>Audífonos 3</h3>
-                        <img src="img/audifonos3.jpg" alt="Audífonos 3">
-                        <p>Descripción de los audífonos 3.</p>
-                        <span class="precio">$100</span>
-                    </label>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/audifonos2.jpg" class="card-img-top p-4" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" id="audifonos2" data-nombre="Audifono 2" data-precio="90">
+                        <label for="audifono2">
+                          <h5 class="card-title">Audifono 2</h5>
+                          <p class="card-text">Descripción del audifono 2.</p>
+                          <span class="precio">$90</span>
+                        </label>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Ah te pones mamon?</small>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section id="pc">
-            <h2>PC</h2>
-            <div class="productos">
-                <div class="producto">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/audifonos3.jpg" class="card-img-top p-4" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" id="audifonos3" data-nombre="Audifono 3" data-precio="100">
+                        <label for="audifono3">
+                            <h5 class="card-title">Audifono 3</h5>
+                            <p class="card-text">Descripción del audifono 3.</p>
+                            <span class="precio">$100</span>
+                        </label>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Achingar a sumadre</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>PC</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 p-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/pc1.jpg" class="card-img-top p-4" alt="...">
+                <div class="card-body">
                     <input type="checkbox" id="pc1" data-nombre="PC 1" data-precio="1000">
                     <label for="pc1">
-                        <h3>PC 1</h3>
-                        <img src="img/pc1.jpg" alt="PC 1">
-                        <p>Descripción de la PC 1.</p>
+                        <h5 class="card-title">PC 1</h5>
+                        <p class="card-text">Descripción de la PC 1.</p>
                         <span class="precio">$1000</span>
                     </label>
                 </div>
-                <div class="producto">
-                    <input type="checkbox" id="pc2" data-nombre="PC 2" data-precio="1200">
-                    <label for="pc2">
-                        <h3>PC 2</h3>
-                        <img src="img/pc2.jpg" alt="PC 2">
-                        <p>Descripción de la PC 2.</p>
-                        <span class="precio">$1200</span>
-                    </label>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Comprame culo</small>
                 </div>
-                <div class="producto">
-                    <input type="checkbox" id="pc3" data-nombre="PC 3" data-precio="1500">
-                    <label for="pc3">
-                        <h3>PC 3</h3>
-                        <img src="img/pc3.jpg" alt="PC 3">
-                        <p>Descripción de la PC 3.</p>
-                        <span class="precio">$1500</span>
-                    </label>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/pc2.jpg" class="card-img-top p-4" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" id="pc2" data-nombre="PC 2" data-precio="1200">
+                        <label for="pc2">
+                          <h5 class="card-title">PC 2</h5>
+                          <p class="card-text">Descripción de la PC 2.</p>
+                          <span class="precio">$1200</span>
+                        </label>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Ah te pones mamon?</small>
+                    </div>
                 </div>
             </div>
-        </section>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/pc3.jpg" class="card-img-top p-4" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" id="pc3" data-nombre="pc 3" data-precio="1500">
+                        <label for="pc3">
+                            <h5 class="card-title">PC 3</h5>
+                            <p class="card-text">Descripción de la pc 3.</p>
+                            <span class="precio">$1500</span>
+                        </label>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Achingar a sumadre</small>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section id="resumen">
             <h2>Articulos seleccionados</h2>
             <div id="lista-seleccionados">
@@ -196,5 +275,9 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
